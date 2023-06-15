@@ -14,20 +14,20 @@
 {{/if}}
 
 <form action="/contact/send-message" method="POST" enctype="multipart/form-data">
-  <label>
-    Your name: <input type="text" name="author">
+  <label for="author">
+    Your name: <input type="text" id="author" name="author">
   </label>
-  <label>
-    Your email: <input type="email" name="sender">
+  <label for="sender">
+    Your email: <input type="email" id="sender" name="sender">
   </label>
-  <label>
-    Title: <input type="text" name="title">
+  <label for="title">
+    Title: <input type="text" id="title" name="title">
   </label>
-    <label>
-    Project design: <input type="file" name="design">
+  <label for="design">
+    Project design: <input type="file" id="design" name="design">
   </label>
-   <label>
-    Message: <textarea name="message"></textarea>
+  <label for="message">
+    Message: <textarea id="message" name="message"></textarea>
   </label>
   <button type="submit">Send message</button>
 </form>
